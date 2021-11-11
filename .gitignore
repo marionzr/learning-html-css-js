@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# vscode
+.vscode/
+
+# drafts
+_draft.html
+_draft.css
+_draft.js
