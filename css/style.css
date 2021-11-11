@@ -1,0 +1,31 @@
+/* html tags */
+html {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+hr {
+  border-style: solid;
+  border-width: 0.025rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: dodgerblue;
+}
