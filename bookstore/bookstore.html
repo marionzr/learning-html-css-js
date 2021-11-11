@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <title>Catalog</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Chapters</th>
+                <th>ISBN</th>
+                <th>Published At</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Place holder -->
+            <tr>
+                <td>The magic box</td>
+                <td>Mr. M</td>
+                <td>231</td>
+                <td>194872635</td>
+                <td>2007</td>
+            </tr>
+            <tr>
+                <td>JS made easy</td>
+                <td>Mario</td>
+                <td>633</td>
+                <td>976431285</td>
+                <td>2008</td>
+            </tr>
+            <!-- Place holder -->
+        </tbody>
+    </table>
+
+    <script src="./js/books.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+        clearTBody(); // comment this line to see the table with sample data.
+        let response = getBooks();
+        console.log(response.books);
+    </script>
+</body>
+</html>
