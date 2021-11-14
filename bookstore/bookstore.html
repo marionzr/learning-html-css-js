@@ -9,7 +9,7 @@
     <title>Catalog</title>
 </head>
 <body>
-    <table>
+    <table id="books">
         <thead>
             <tr>
                 <th>Book</th>
@@ -19,7 +19,7 @@
                 <th>Published At</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="books.items">
             <!-- Place holder -->
             <tr>
                 <td>The magic box</td>
@@ -39,12 +39,8 @@
         </tbody>
     </table>
 
-    <script src="./js/books.js"></script>
     <script src="../js/index.js"></script>
-    <script>
-        clearTBody(); // comment this line to see the table with sample data.
-        let response = getBooks();
-        console.log(response.books);
-    </script>
+    <script src="./js/books.js"></script>
+    <script src="./js/bookstore.js"></script>
 </body>
 </html>
