@@ -1,0 +1,7 @@
+#books_items_count {
+  text-align: right;
+}
+
+#books_items_count::before {
+  content: "Total: ";
+}

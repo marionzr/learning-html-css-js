@@ -19,16 +19,19 @@ function addBookIntoTBody(tBody, book) {
 
 function addBooksIntoTable() {
      // Gets the tbody by ID.
-    tBody = document.getElementById("books.items");
+    let tBody = document.getElementById("books_items");
     tBody.innerHTML = "";
 
-    let response = getBooks(book => book.publishedAt > 2000);
+    let response = getBooks();
     let books = response.books;
 
     for (let i = 0; i < books.length; i++) {
         let book = books[i];
         addBookIntoTBody(tBody, book);
     }
+
+    let tFoot = document.getElementById("books_items_count");
+    tFoot.innerText = `${books.length}/${response.totalCount}`;
 }
 
 addBooksIntoTable();

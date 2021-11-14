@@ -47,7 +47,7 @@ let _books = [
                     page: 28,
                 },
             ],
-        }
+        },
     ];
 
 
@@ -66,12 +66,13 @@ function getBooks(preticate) {
     }
 
     // Filters (if predice is defined) the books.
-    let books = _books.filter(preticate)
+    let books = _books.filter(preticate);
 
     let response = {
         id: requestId,
         date: requestDate,
         books: books,
+        totalCount: _books.length,
     }
 
     return response;
